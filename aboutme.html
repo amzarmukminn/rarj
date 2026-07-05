@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A learning website about Rumah Anak Yatim / Rumah Amal Raudhatul Jannah for IMS458 Web Design and Development.">
+  <meta name="keywords" content="Rumah Anak Yatim, Rumah Amal Raudhatul Jannah, Banting, orphanage, donation, welfare, IMS458">
+  <meta name="author" content="Muhammad Amzar Mukmin">
+  <title>IMS458 Assignment | About Me</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bilbo&family=Damion&family=Engagement&family=Yellowtail&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div id="loader">
+    <div class="spinner"></div>
+  </div>
+  <header class="site-header sub-header" id="top">
+    <div class="header-overlay">
+      <p class="assignment-label">Developer Details</p>
+      <h1>About Me</h1>
+      <p class="header-text">Corporate website developed for Rumah Amal Raudhatul Jannah. Designed to support donor engagement, volunteer coordination, and community outreach.</p>
+      <a class="header-button" href="#student-details">View Details</a>
+    </div>
+  </header>
+
+  <nav class="main-nav" aria-label="Main navigation">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="activities.html">Activities</a></li>
+      <li><a href="donation.html">Donation</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a class="active" href="aboutme.html">About Me</a></li>
+    </ul>
+  </nav>
+
+<div id="page-content">
+  <main>
+    <section class="aboutme-section" id="student-details">
+      <div class="student-photo-card">
+        <figure>
+          <img src="images/profile_photo.png" alt="Developer portrait placeholder">
+          <figcaption>Muhammad Amzar Mukmin, Lead Developer</figcaption>
+        </figure>
+      </div>
+
+      <div class="student-details-card">
+        <p class="section-label">Project Information</p>
+        <h2>Developer Background & Course Information</h2>
+
+        <table class="student-table">
+          <tr>
+            <th>Title</th>
+            <td>Corporate Website</td>
+          </tr>
+          <tr>
+            <th>Name</th>
+            <td>Muhammad Amzar Mukmin Bin Pauzan</td>
+          </tr>
+          <tr>
+            <th>Student ID</th>
+            <td>2025423582</td>
+          </tr>
+          <tr>
+            <th>Group</th>
+            <td>SI2622A</td>
+          </tr>
+          <tr>
+            <th>Course Code</th>
+            <td>IMS458</td>
+          </tr>
+          <tr>
+            <th>Course Name</th>
+            <td>Web Design And Development</td>
+          </tr>
+          <tr>
+            <th>Program Code</th>
+            <td>SI262</td>
+          </tr>
+          <tr>
+            <th>Faculty</th>
+            <td>Faculty of Information Science</td>
+          </tr>
+          <tr>
+            <th>Submission Date</th>
+            <td><time datetime="2026-07-05">05 July 2026</time></td>
+          </tr>
+          <tr>
+            <th>Published URL</th>
+            <td><a href="https://amzarmukminn.github.io/rarj">https://amzarmukminn.github.io/rarj</a></td>
+          </tr>
+        </table>
+      </div>
+    </section>
+
+    <section class="quick-links" aria-labelledby="aboutme-links-title">
+      <h2 id="aboutme-links-title">Website Pages</h2>
+      <ul>
+        <li><a href="index.html">Home page</a></li>
+        <li><a href="about.html">About the home</a></li>
+        <li><a href="activities.html">Activities and gallery</a></li>
+        <li><a href="donation.html">Donation guide</a></li>
+        <li><a href="contact.html">Contact and location</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>
+      <small>Disclaimer: This website is not the official website of Rumah Anak Yatim / Rumah Amal Raudhatul Jannah Banting.
+      This website was developed for the purpose of learning HTML and CSS only.</small>
+    </p>
+    <p><small>&copy; 2026 MUHAMMAD AMZAR MUKMIN. All rights reserved.</small></p>
+    <p><small>Recommended browser: Google Chrome or Microsoft Edge. Recommended resolution: 1366 x 768 and above.</small></p>
+    <p><small>Last updated: <time datetime="2026-07-05">05 July 2026</time> | <a href="#top">Back to top</a></small></p>
+  </footer>
+</div>
+
+<script>
+  window.addEventListener('load', function() {
+    const loader = document.getElementById('loader');
+    const content = document.getElementById('page-content');
+
+    setTimeout(() => {
+      loader.style.opacity = '0';
+
+      setTimeout(() => {
+        loader.style.display = 'none';
+        content.style.opacity = '1';
+      }, 400);
+    }, 800);
+  });
+</script>
+</body>
+</html>
