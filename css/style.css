@@ -1247,3 +1247,222 @@ footer a:hover {
     grid-template-columns: 1fr;
   }
 }
+
+/* DARK MODE */
+
+/* Color overrides Dark Mode */
+.darkmode {
+  --dominant-bg: #0f1624;
+  --surface: #1a2236;
+  --text-main: #e8edf5;
+  --text-muted: #a8b5c9;
+  --secondary-blue: #4a7a9c;
+  --secondary-blue-dark: #1a2a44;
+  --support-green: #3a9d7a;
+  --line-soft: #2a3a52;
+  --accent-orange: #f5a623;
+  --accent-coral: #e8894a;
+  --warning-red: #cc5c5c;
+  --input-border: #3a4a62;
+  --shadow-sm: 0 4px 12px rgba(0, 0, 0, 0.3);
+  --shadow-md: 0 8px 28px rgba(0, 0, 0, 0.4);
+  --shadow-lg: 0 16px 48px rgba(0, 0, 0, 0.5);
+}
+
+/* Specific overrides Dark Mode */
+.darkmode .site-header {
+  background: linear-gradient(135deg, rgba(10, 20, 40, 0.92), rgba(15, 30, 50, 0.85)),
+              url("../images/header1.jpg") center/cover no-repeat;
+}
+
+.darkmode .sub-header {
+  background: linear-gradient(135deg, rgba(10, 20, 40, 0.92), rgba(15, 30, 50, 0.85)),
+              url("../images/header1.jpg") center/cover no-repeat;
+}
+
+.darkmode .main-nav {
+  background: #0a1428;
+}
+
+.darkmode .info-card,
+.darkmode .fact-box,
+.darkmode .content-panel,
+.darkmode .mission-card,
+.darkmode .objective-list,
+.darkmode .program-card,
+.darkmode .support-card,
+.darkmode .instruction-content,
+.darkmode .bank-box,
+.darkmode .contact-details,
+.darkmode .visit-card,
+.darkmode .direction-box,
+.darkmode .contact-form-section,
+.darkmode .student-photo-card,
+.darkmode .student-details-card,
+.darkmode .quick-links ul,
+.darkmode .chart-wrapper,
+.darkmode .timeline article,
+.darkmode .donor-checklist {
+  background: var(--surface);
+  box-shadow: var(--shadow-sm);
+}
+
+.darkmode .notice-box {
+  background: var(--surface);
+}
+
+.darkmode .detail-list article {
+  background: var(--dominant-bg);
+}
+
+.darkmode .student-table td {
+  background: var(--dominant-bg);
+}
+
+.darkmode .student-table th {
+  background: var(--secondary-blue-dark);
+  color: #fff;
+}
+
+.darkmode .contact-form input,
+.darkmode .contact-form select,
+.darkmode .contact-form textarea {
+  background: var(--dominant-bg);
+  border-color: var(--input-border);
+  color: var(--text-main);
+}
+
+.darkmode .contact-form input:focus,
+.darkmode .contact-form select:focus,
+.darkmode .contact-form textarea:focus {
+  border-color: var(--accent-orange);
+  box-shadow: 0 0 0 4px rgba(245, 166, 35, 0.15);
+}
+
+.darkmode .contact-form input:invalid:not(:placeholder-shown),
+.darkmode .contact-form textarea:invalid:not(:placeholder-shown) {
+  border-color: var(--warning-red);
+}
+
+.darkmode .contact-form button {
+  background: var(--support-green);
+}
+
+.darkmode .contact-form button:hover,
+.darkmode .contact-form button:focus {
+  background: var(--accent-orange);
+  color: var(--secondary-blue-dark);
+}
+
+.darkmode .map-placeholder {
+  background: linear-gradient(135deg, rgba(10, 20, 40, 0.8), rgba(15, 30, 50, 0.85)),
+              url("../images/map.jpg") center/cover no-repeat;
+}
+
+.darkmode .image-link {
+  background: linear-gradient(135deg, rgba(10, 20, 40, 0.7), rgba(15, 30, 50, 0.8)),
+              url("../images/header2.jpg") center/cover no-repeat;
+}
+
+.darkmode .gallery-item {
+  background: var(--secondary-blue-dark);
+}
+
+.darkmode .gallery-item span {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.darkmode .program-card img {
+  filter: brightness(0.85);
+}
+
+.darkmode .chart-node {
+  background: var(--dominant-bg);
+  border-color: var(--line-soft);
+}
+
+.darkmode .chart-node .role-label {
+  color: var(--text-muted);
+}
+
+.darkmode .chart-node .member-name {
+  color: var(--text-main);
+}
+
+.darkmode .chart-node .member-img {
+  border-color: var(--line-soft);
+}
+
+.darkmode .chart-node.top-node .member-img {
+  border-color: var(--accent-orange);
+}
+
+.darkmode footer {
+  background: #0a1428;
+}
+
+.darkmode footer a {
+  color: var(--accent-orange);
+}
+
+.darkmode footer a:hover {
+  color: #fff;
+}
+
+/* DARK MODE TOGGLE BUTTON */
+#theme-switch {
+  height: 44px;
+  width: 44px;
+  padding: 0;
+  border: 2px solid var(--line-soft);
+  border-radius: 50%;
+  background-color: var(--surface);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  z-index: 9999;
+  cursor: pointer;
+  box-shadow: var(--shadow-md);
+  transition: all 0.3s ease;
+}
+
+#theme-switch:hover {
+  transform: scale(1.1);
+  box-shadow: var(--shadow-lg);
+}
+
+#theme-switch svg {
+  fill: var(--text-main);
+  width: 22px;
+  height: 22px;
+}
+
+#theme-switch svg:last-child {
+  display: none;
+}
+
+.darkmode #theme-switch svg:first-child {
+  display: none;
+}
+
+.darkmode #theme-switch svg:last-child {
+  display: block;
+}
+
+/* Responsive: adjust butang kt mobile view */
+@media (max-width: 600px) {
+  #theme-switch {
+    bottom: 16px;
+    right: 16px;
+    height: 40px;
+    width: 40px;
+  }
+  
+  #theme-switch svg {
+    width: 20px;
+    height: 20px;
+  }
+}
